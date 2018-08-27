@@ -8,6 +8,6 @@ pre = "<b>1. </b>"
 
 ### Chapter 1
 
-# Intro 产品简介入门
+# Intro 产品简介入门指导
 
 Let me give you the best.
