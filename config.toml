@@ -9,7 +9,7 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
+  editURL = "https://github.com/aliware-os/nacos1/edit/master/content/"
   description = "Documentation for Nacos"
   author = "Aliware Docs"
   showVisitedLinks = true
@@ -29,13 +29,13 @@ languageName = "English"
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
+url = "https://github.com/alibaba/nacos"
 weight = 10
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
+name = "<i class='fas fa-fw fa-bookmark'></i> Nacos.io"
 identifier = "hugodoc"
-url = "https://gohugo.io/"
+url = "https://nacos.io/"
 weight = 20
 
 [[Languages.en.menu.shortcuts]]
@@ -43,24 +43,24 @@ name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
 url = "/credits"
 weight = 30
 
-[Languages.fr]
-title = "Documentation du thème Hugo Learn"
+[Languages.zh-cn]
+title = "Nacos 文档"
 weight = 2
-languageName = "Français"
+languageName = "简体中文"
 
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> Repo Github"
+[[Languages.zh-cn.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> Github 仓库"
 identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
+url = "https://github.com/alibaba/nacos"
 weight = 10
 
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> Documentation Hugo"
+[[Languages.zh-cn.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Nacos 官网"
 identifier = "hugodoc"
-url = "https://gohugo.io/"
+url = "https://nacos.io/"
 weight = 20
 
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> Crédits"
+[[Languages.zh-cn.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> 鸣谢"
 url = "/credits"
 weight = 30
