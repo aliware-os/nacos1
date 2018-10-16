@@ -21,7 +21,7 @@ build:
     # https://devcenter.wercker.com/development/steps/
   steps:
     - arjen/hugo-build:
-        version: "0.47"
+        version: "0.48"
         theme: navigator-hugo
         flags: --buildDrafts=true
 
