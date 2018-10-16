@@ -22,7 +22,7 @@ build:
   steps:
     - arjen/hugo-build:
         version: "0.47"
-        theme: hugo-theme-learn-master
+        theme: navigator-hugo
         flags: --buildDrafts=true
 
 deploy:
