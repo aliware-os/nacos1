@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring Cloud Alibaba on Documentation for Spring Cloud Alibaba</title>
+    <link>http://aliware-os.github.io/nacos1/en/</link>
+    <description>Recent content in Spring Cloud Alibaba on Documentation for Spring Cloud Alibaba</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 11 Sep 2018 13:26:22 +0800</lastBuildDate>
+    
+	<atom:link href="http://aliware-os.github.io/nacos1/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is Spring Cloud Alibaba</title>
+      <link>http://aliware-os.github.io/nacos1/en/product_intro/what_is/</link>
+      <pubDate>Mon, 27 Aug 2018 11:44:02 +0800</pubDate>
+      
+      <guid>http://aliware-os.github.io/nacos1/en/product_intro/what_is/</guid>
+      <description> Lorem Ipsum </description>
+    </item>
+    
+    <item>
+      <title>About_us</title>
+      <link>http://aliware-os.github.io/nacos1/en/product_intro/about_us/</link>
+      <pubDate>Mon, 27 Aug 2018 11:45:30 +0800</pubDate>
+      
+      <guid>http://aliware-os.github.io/nacos1/en/product_intro/about_us/</guid>
+      <description>Title test ../images
+../../images
+../../../images
+../../../../images
+这个快速开始手册是帮忙您快速在你的电脑上，下载安装并使用Nacos。
+1.预备环境准备 请确保是在环境中安装使用:
+1.64bit OS, 支持Linux/Unix/Mac/Windows,推荐选用Linux/Unix/Mac; 2.64bit JDK 1.8+; 3.Maven 3.2.x+;
+2.下载源码&amp;amp;或者下载安装包 你可以通过两种方式来获取nacos。
+从github上下载源码方式  unzip nacos-all.zip cd nacos/ mvn -Prelease-all -DskipTests clean install -U cd distribution/target/nacos-all/nacos
+ 下载运行包方式 下载地址 http://nacos.oss-cn-hangzhou.aliyuncs.com/nacos-all.zip
+&amp;gt; unzip nacos-all.zip &amp;gt; cd nacos/
+3.启动服务器 Linux/Unix/Mac 启动命令(standalone代表着单机模式运行，非集群模式): sh startup.sh standalone
+Windows 启动命令(standalone代表着单机模式运行，非集群模式): cmd startup.cmd standalone
+4.服务发现和配置管理 发布服务实例 curl -X PUT &amp;lsquo;http://127.0.0.1:8080/nacos/naming/instance?serviceName=nacos.naming.serviceName&amp;amp;ip=20.18.7.10&amp;amp;port=8080&#39;
+获取服务实例 curl -X GET http://127.0.0.1:8080/nacos/naming/instances?serviceName=nacos.naming.serviceName&#39;
+发布配置 curl -X POST &amp;ldquo;http://127.</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m on the second level</title>
+      <link>http://aliware-os.github.io/nacos1/en/product_intro/2nd-level/first_case/</link>
+      <pubDate>Mon, 27 Aug 2018 13:00:09 +0800</pubDate>
+      
+      <guid>http://aliware-os.github.io/nacos1/en/product_intro/2nd-level/first_case/</guid>
+      <description>I&amp;rsquo;m on the second level test ../images
+../../images
+../../../images
+../../../../images</description>
+    </item>
+    
+    <item>
+      <title>Quick_start_guide</title>
+      <link>http://aliware-os.github.io/nacos1/en/quick_start/quick_start_guide/</link>
+      <pubDate>Mon, 27 Aug 2018 12:58:22 +0800</pubDate>
+      
+      <guid>http://aliware-os.github.io/nacos1/en/quick_start/quick_start_guide/</guid>
+      <description>Let me show you How it works!</description>
+    </item>
+    
+    <item>
+      <title>Roadmap</title>
+      <link>http://aliware-os.github.io/nacos1/en/roadmaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://aliware-os.github.io/nacos1/en/roadmaps/</guid>
+      <description>test ../images
+../../images
+../../../images
+../../../../images
+See the 中文文档 for Chinese Roadmap.
+Spring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components required to develop distributed applications, making it easy for you to develop your applications using Spring Cloud.
+This project contains components from both open-source and commercialized Alibaba middleware products，but are not limited to them.
+If you have any suggestions on our roadmap, feel free to submit issues or contact us via the other channels.</description>
+    </item>
+    
+  </channel>
+</rss>

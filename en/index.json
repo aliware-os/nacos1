@@ -1,0 +1,85 @@
+[
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/roadmap/",
+	"title": "Roadmap",
+	"tags": [],
+	"description": "",
+	"content": " See the 中文文档 for Chinese Roadmap.\nSpring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components required to develop distributed applications, making it easy for you to develop your applications using Spring Cloud.\nThis project contains components from both open-source and commercialized Alibaba middleware products，but are not limited to them.\nIf you have any suggestions on our roadmap, feel free to submit issues or contact us via the other channels.\nComponents Sentinel\nAn open-source project of Alibaba, Sentinel takes \u0026ldquo;flow\u0026rdquo; as breakthrough point, and provides solutions in areas such as flow control, concurrency, circuit breaking, and load protection to protect service stability.\nMore components will be supported by Spring Cloud Alibaba in the future, which may include but are not limited to the following:\nDubbo Apache Dubbo™ (incubating) is a high-performance, Java based open source RPC framework.\nRocketMQ Apache RocketMQ™ is an open source distributed messaging and streaming data platform.\nNacos An opensource project of Alibaba, an easy-to-use dynamic service discovery, configuration and service management platform for building cloud native applications.\nSchedulerx A distributed task scheduling product developed by Alibaba Middleware team. It supports both periodical tasks and tasks to be triggered at specified time points.\nAliyun OSS Aliyun Object Storage Service, An encrypted and secure cloud storage service which stores, processes and accesses massive amounts of data from anywhere in the world.\nAliyun SLS Aliyun Log Service is an all-in-one service for log-type data. It helps increase Operations \u0026amp; Management and operational efficiency, as well as build the processing capability to deal with massive logs.\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/quick_start/",
+	"title": "Quick_start",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 2 Quick Start This is your quick start.\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/product_intro/what_is/",
+	"title": "What is Spring Cloud Alibaba",
+	"tags": [],
+	"description": "",
+	"content": " Lorem Ipsum "
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/product_intro/about_us/",
+	"title": "About_us",
+	"tags": [],
+	"description": "",
+	"content": " Title test ../images\n../../images\n../../../images\n../../../../images\n这个快速开始手册是帮忙您快速在你的电脑上，下载安装并使用Nacos。\n1.预备环境准备 请确保是在环境中安装使用:\n1.64bit OS, 支持Linux/Unix/Mac/Windows,推荐选用Linux/Unix/Mac; 2.64bit JDK 1.8+; 3.Maven 3.2.x+;\n2.下载源码\u0026amp;或者下载安装包 你可以通过两种方式来获取nacos。\n从github上下载源码方式  unzip nacos-all.zip cd nacos/ mvn -Prelease-all -DskipTests clean install -U cd distribution/target/nacos-all/nacos\n 下载运行包方式 下载地址 http://nacos.oss-cn-hangzhou.aliyuncs.com/nacos-all.zip\n\u0026gt; unzip nacos-all.zip \u0026gt; cd nacos/\n3.启动服务器 Linux/Unix/Mac 启动命令(standalone代表着单机模式运行，非集群模式): sh startup.sh standalone\nWindows 启动命令(standalone代表着单机模式运行，非集群模式): cmd startup.cmd standalone\n4.服务发现和配置管理 发布服务实例 curl -X PUT \u0026lsquo;http://127.0.0.1:8080/nacos/naming/instance?serviceName=nacos.naming.serviceName\u0026amp;ip=20.18.7.10\u0026amp;port=8080'\n获取服务实例 curl -X GET http://127.0.0.1:8080/nacos/naming/instances?serviceName=nacos.naming.serviceName'\n发布配置 curl -X POST \u0026ldquo;http://127.0.0.1:8080/nacos/basestone.do?method=syncUpdateAll?dataId=nacos.cfg.dataId\u0026amp;group=test\u0026amp;content=helloWorld\u0026quot;\n获取配置 curl -X GET \u0026ldquo;http://127.0.0.1:8080/nacos/config.no?dataId=nacos.cfg.dataId\u0026amp;group=test\u0026quot;\n5.关闭服务器 sh shutdown.sh\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/product_intro/",
+	"title": "What is Spring Cloud Alibaba",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 1 Spring Cloud Alibaba Intro test ../images\n../../images\n../../../images\n../../../../images\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/",
+	"title": "Spring Cloud Alibaba",
+	"tags": [],
+	"description": "",
+	"content": " test ../images\n../../images\n../../../images\n../../../../images\nSee the 中文文档 for Chinese readme.\nSpring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components required to develop distributed applications, making it easy for you to develop your applications using Spring Cloud.\nWith Spring Cloud Alibaba，you only need to add some annotations and a small amount of configurations to connect Spring Cloud applications to the distributed solutions of Alibaba, and build a distributed application system with Alibaba middleware.\nFeatures  Flow control and service degradation：Flow control for HTTP services is supported by default. You can also customize flow control and service degradation rules using annotations. The rules can be changed dynamically.  For more features, please refer to Roadmap.\nComponents Sentinel: Sentinel takes \u0026ldquo;traffic flow\u0026rdquo; as the breakthrough point, and provides solutions in areas such as flow control, concurrency, circuit breaking, and load protection to protect service stability.\nFor more features please refer to Roadmap.\nHow to build  master branch: Corresponds to Spring Boot 2.x. JDK 1.8 or later versions are supported. 1.x branch: Corresponds to Spring Boot 1.x，JDK 1.7 or later versions are supported.  Spring Cloud uses Maven for most build-related activities, and you should be able to get off the ground quite quickly by cloning the project you are interested in and typing:\n./mvnw install  How to use A spring-cloud-alibaba-examples module is included in our project for you to get started with Spring Cloud Alibaba quickly. It contains an example, and you can refer to the readme file in the example project for a quick walkthrough.\nExamples：\nSentinel example\nVersion control guidelines The version number of the project is in the form of x.x.x, where x is a number, starting from 0, and is not limited to the range 0~9. When the project is in the incubator phase, the first version number is fixed to 0, that is, the version number is 0.x.x.\nAs the interfaces and annotations of Spring Boot 1 and Spring Boot 2 have been changed significantly in the Actuator module, and spring-cloud-commons is also changed quite a lot from 1.x.x to 2.0.0, we maintain two different branches to support Spring Boot 1 and Spring Boot 2: * 0.1.x for Spring Boot 1 * 0.2.x for Spring Boot 2\nDuring the incubation period，the version management of the project will follow these rules： * Functional updates will be reflected in the 3rd number of the version, for example, the next version of 0.1.0 will be 0.1.1。 * Emergency fixes for bugs that block the main business process will be reflected in version numbers such as 0.1.1.fix. However, it is our duty to improve the test regression process to avoid such scenarios.\nContact Us Mailing list is recommended for discussing almost anything related to spring-cloud-alibaba.\nspring-cloud-alibaba@googlegroups.com:You can ask questions here if you encounter any problem when using or developing spring-cloud-alibaba.\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/product_intro/2nd-level/first_case/",
+	"title": "I&#39;m on the second level",
+	"tags": [],
+	"description": "",
+	"content": " I\u0026rsquo;m on the second level test ../images\n../../images\n../../../images\n../../../../images\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/quick_start/quick_start_guide/",
+	"title": "Quick_start_guide",
+	"tags": [],
+	"description": "",
+	"content": " Let me show you How it works!\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/product_intro/2nd-level/",
+	"title": "The second level",
+	"tags": [],
+	"description": "",
+	"content": " test ../images\n../../images\n../../../images\n../../../../images\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/roadmaps/",
+	"title": "Roadmap",
+	"tags": [],
+	"description": "",
+	"content": " test ../images\n../../images\n../../../images\n../../../../images\nSee the 中文文档 for Chinese Roadmap.\nSpring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components required to develop distributed applications, making it easy for you to develop your applications using Spring Cloud.\nThis project contains components from both open-source and commercialized Alibaba middleware products，but are not limited to them.\nIf you have any suggestions on our roadmap, feel free to submit issues or contact us via the other channels.\nComponents Sentinel\nAn open-source project of Alibaba, Sentinel takes \u0026ldquo;flow\u0026rdquo; as breakthrough point, and provides solutions in areas such as flow control, concurrency, circuit breaking, and load protection to protect service stability.\nMore components will be supported by Spring Cloud Alibaba in the future, which may include but are not limited to the following:\nDubbo Apache Dubbo™ (incubating) is a high-performance, Java based open source RPC framework.\nRocketMQ Apache RocketMQ™ is an open source distributed messaging and streaming data platform.\nNacos An opensource project of Alibaba, an easy-to-use dynamic service discovery, configuration and service management platform for building cloud native applications.\nSchedulerx A distributed task scheduling product developed by Alibaba Middleware team. It supports both periodical tasks and tasks to be triggered at specified time points.\nAliyun OSS Aliyun Object Storage Service, An encrypted and secure cloud storage service which stores, processes and accesses massive amounts of data from anywhere in the world.\nAliyun SLS Aliyun Log Service is an all-in-one service for log-type data. It helps increase Operations \u0026amp; Management and operational efficiency, as well as build the processing capability to deal with massive logs.\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/en/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

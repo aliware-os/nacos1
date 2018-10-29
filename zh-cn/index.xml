@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring Cloud Alibaba on Spring Cloud Alibaba 文档</title>
+    <link>http://aliware-os.github.io/nacos1/zh-cn/</link>
+    <description>Recent content in Spring Cloud Alibaba on Spring Cloud Alibaba 文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 11 Sep 2018 13:26:22 +0800</lastBuildDate>
+    
+	<atom:link href="http://aliware-os.github.io/nacos1/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is Spring Cloud Alibaba</title>
+      <link>http://aliware-os.github.io/nacos1/zh-cn/product_intro/what_is/</link>
+      <pubDate>Mon, 27 Aug 2018 11:44:02 +0800</pubDate>
+      
+      <guid>http://aliware-os.github.io/nacos1/zh-cn/product_intro/what_is/</guid>
+      <description> Lorem Ipsum </description>
+    </item>
+    
+    <item>
+      <title>About_us</title>
+      <link>http://aliware-os.github.io/nacos1/zh-cn/product_intro/about_us/</link>
+      <pubDate>Mon, 27 Aug 2018 11:45:30 +0800</pubDate>
+      
+      <guid>http://aliware-os.github.io/nacos1/zh-cn/product_intro/about_us/</guid>
+      <description>Title test ../images
+../../images
+这个快速开始手册是帮忙您快速在你的电脑上，下载安装并使用Nacos。
+1.预备环境准备 请确保是在环境中安装使用:
+1.64bit OS, 支持Linux/Unix/Mac/Windows,推荐选用Linux/Unix/Mac; 2.64bit JDK 1.8+; 3.Maven 3.2.x+;
+2.下载源码&amp;amp;或者下载安装包 你可以通过两种方式来获取nacos。
+从github上下载源码方式  unzip nacos-all.zip cd nacos/ mvn -Prelease-all -DskipTests clean install -U cd distribution/target/nacos-all/nacos
+ 下载运行包方式 下载地址 http://nacos.oss-cn-hangzhou.aliyuncs.com/nacos-all.zip
+&amp;gt; unzip nacos-all.zip &amp;gt; cd nacos/
+3.启动服务器 Linux/Unix/Mac 启动命令(standalone代表着单机模式运行，非集群模式): sh startup.sh standalone
+Windows 启动命令(standalone代表着单机模式运行，非集群模式): cmd startup.cmd standalone
+4.服务发现和配置管理 发布服务实例 curl -X PUT &amp;lsquo;http://127.0.0.1:8080/nacos/naming/instance?serviceName=nacos.naming.serviceName&amp;amp;ip=20.18.7.10&amp;amp;port=8080&#39;
+获取服务实例 curl -X GET http://127.0.0.1:8080/nacos/naming/instances?serviceName=nacos.naming.serviceName&#39;
+发布配置 curl -X POST &amp;ldquo;http://127.0.0.1:8080/nacos/basestone.do?method=syncUpdateAll?dataId=nacos.cfg.dataId&amp;amp;group=test&amp;amp;content=helloWorld&amp;quot;
+获取配置 curl -X GET &amp;ldquo;http://127.</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m on the second level</title>
+      <link>http://aliware-os.github.io/nacos1/zh-cn/product_intro/2nd-level/first_case/</link>
+      <pubDate>Mon, 27 Aug 2018 13:00:09 +0800</pubDate>
+      
+      <guid>http://aliware-os.github.io/nacos1/zh-cn/product_intro/2nd-level/first_case/</guid>
+      <description> I&amp;rsquo;m on the second level </description>
+    </item>
+    
+    <item>
+      <title>Quick_start_guide</title>
+      <link>http://aliware-os.github.io/nacos1/zh-cn/quick_start/quick_start_guide/</link>
+      <pubDate>Mon, 27 Aug 2018 12:58:22 +0800</pubDate>
+      
+      <guid>http://aliware-os.github.io/nacos1/zh-cn/quick_start/quick_start_guide/</guid>
+      <description>Let me show you How it works!</description>
+    </item>
+    
+    <item>
+      <title>路线图</title>
+      <link>http://aliware-os.github.io/nacos1/zh-cn/roadmaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://aliware-os.github.io/nacos1/zh-cn/roadmaps/</guid>
+      <description>Spring Cloud Alibaba 致力于提供分布式应用服务开发的一站式解决方案。项目包含开发分布式应用服务的必需组件，方便开发者通过 Spring Cloud 编程模型轻松使用这些组件来开发分布式应用服务。
+此项目包含的组件内容，主要选取自阿里巴巴开源中间件和阿里云商业化产品，但也不限定于这些产品。
+如果您对 Roadmap 有任何建议或想法，欢迎在 issue 中或者通过其他社区渠道向我们提出，一起讨论。
+已包含的组件 Sentinel 阿里巴巴开源项目，把流量作为切入点，从流量控制，熔断降级，系统负载保护等多个维度保护服务的稳定性。
+即将加入的组件 Dubbo Apache Dubbo™ (incubating) 是一款高性能Java RPC框架。
+RocketMQ Apache RocketMQ™ 基于Java的高性能、高吞吐量的分布式消息和流计算平台。
+Nacos 阿里巴巴开源产品，一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。
+Schedulerx 阿里中间件团队开发的一款分布式任务调度产品，支持周期性的任务与固定时间点触发任务。
+Aliyun OSS 阿里云对象存储服务（Object Storage Service，简称 OSS），是阿里云提供的海量、安全、低成本、高可靠的云存储服务。您可以在任何应用、任何时间、任何地点存储和访问任意类型的数据。
+Aliyun SLS 针对日志类数据的一站式服务，在阿里巴巴集团经历大量大数据场景锤炼而成。您无需开发就能快捷完成日志数据采集、消费、投递以及查询分析等功能，提升运维、运营效率，建立 DT 时代海量日志处理能力。</description>
+    </item>
+    
+  </channel>
+</rss>

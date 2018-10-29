@@ -1,0 +1,85 @@
+[
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/roadmap/",
+	"title": "路线图",
+	"tags": [],
+	"description": "",
+	"content": " Spring Cloud Alibaba 致力于提供分布式应用服务开发的一站式解决方案。项目包含开发分布式应用服务的必需组件，方便开发者通过 Spring Cloud 编程模型轻松使用这些组件来开发分布式应用服务。\n此项目包含的组件内容，主要选取自阿里巴巴开源中间件和阿里云商业化产品，但也不限定于这些产品。\n如果您对 Roadmap 有任何建议或想法，欢迎在 issue 中或者通过其他社区渠道向我们提出，一起讨论。\n已包含的组件 Sentinel 阿里巴巴开源项目，把流量作为切入点，从流量控制，熔断降级，系统负载保护等多个维度保护服务的稳定性。\n即将加入的组件 Dubbo Apache Dubbo™ (incubating) 是一款高性能Java RPC框架。\nRocketMQ Apache RocketMQ™ 基于Java的高性能、高吞吐量的分布式消息和流计算平台。\nNacos 阿里巴巴开源产品，一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。\nSchedulerx 阿里中间件团队开发的一款分布式任务调度产品，支持周期性的任务与固定时间点触发任务。\nAliyun OSS 阿里云对象存储服务（Object Storage Service，简称 OSS），是阿里云提供的海量、安全、低成本、高可靠的云存储服务。您可以在任何应用、任何时间、任何地点存储和访问任意类型的数据。\nAliyun SLS 针对日志类数据的一站式服务，在阿里巴巴集团经历大量大数据场景锤炼而成。您无需开发就能快捷完成日志数据采集、消费、投递以及查询分析等功能，提升运维、运营效率，建立 DT 时代海量日志处理能力。\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/quick_start/",
+	"title": "Quick_start",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 2 Quick Start This is your quick start.\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/product_intro/what_is/",
+	"title": "What is Spring Cloud Alibaba",
+	"tags": [],
+	"description": "",
+	"content": " Lorem Ipsum "
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/product_intro/about_us/",
+	"title": "About_us",
+	"tags": [],
+	"description": "",
+	"content": " Title test ../images\n../../images\n这个快速开始手册是帮忙您快速在你的电脑上，下载安装并使用Nacos。\n1.预备环境准备 请确保是在环境中安装使用:\n1.64bit OS, 支持Linux/Unix/Mac/Windows,推荐选用Linux/Unix/Mac; 2.64bit JDK 1.8+; 3.Maven 3.2.x+;\n2.下载源码\u0026amp;或者下载安装包 你可以通过两种方式来获取nacos。\n从github上下载源码方式  unzip nacos-all.zip cd nacos/ mvn -Prelease-all -DskipTests clean install -U cd distribution/target/nacos-all/nacos\n 下载运行包方式 下载地址 http://nacos.oss-cn-hangzhou.aliyuncs.com/nacos-all.zip\n\u0026gt; unzip nacos-all.zip \u0026gt; cd nacos/\n3.启动服务器 Linux/Unix/Mac 启动命令(standalone代表着单机模式运行，非集群模式): sh startup.sh standalone\nWindows 启动命令(standalone代表着单机模式运行，非集群模式): cmd startup.cmd standalone\n4.服务发现和配置管理 发布服务实例 curl -X PUT \u0026lsquo;http://127.0.0.1:8080/nacos/naming/instance?serviceName=nacos.naming.serviceName\u0026amp;ip=20.18.7.10\u0026amp;port=8080'\n获取服务实例 curl -X GET http://127.0.0.1:8080/nacos/naming/instances?serviceName=nacos.naming.serviceName'\n发布配置 curl -X POST \u0026ldquo;http://127.0.0.1:8080/nacos/basestone.do?method=syncUpdateAll?dataId=nacos.cfg.dataId\u0026amp;group=test\u0026amp;content=helloWorld\u0026quot;\n获取配置 curl -X GET \u0026ldquo;http://127.0.0.1:8080/nacos/config.no?dataId=nacos.cfg.dataId\u0026amp;group=test\u0026quot;\n5.关闭服务器 sh shutdown.sh\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/product_intro/",
+	"title": "什么是 Spring Cloud Alibaba",
+	"tags": [],
+	"description": "",
+	"content": " 第 1 章 Spring Cloud Alibaba Intro "
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/",
+	"title": "Spring Cloud Alibaba",
+	"tags": [],
+	"description": "",
+	"content": " test ../images\n../../images\nSpring Cloud Alibaba 致力于提供分布式应用服务开发的一站式解决方案。此项目包含开发分布式应用服务的必需组件，方便开发者通过 Spring Cloud 编程模型轻松使用这些组件来开发分布式应用服务。\n依托 Spring Cloud Alibaba，您只需要添加一些注解和少量配置，就可以将 Spring Cloud 应用接入阿里分布式应用解决方案，通过阿里中间件来迅速搭建分布式应用系统。\n主要功能  服务限流降级：默认支持为 HTTP 服务的提供限流保护，也支持添加注解实现方法的自定义限流降级，且支持动态修改限流降级规则。  更多功能请参考 Roadmap。\n组件: Sentinel：把流量作为切入点，从流量控制、熔断降级、系统负载保护等多个维度保护服务的稳定性。\n更多组件请参考 Roadmap。\n如何构建  master 分支对应的是 Spring Boot 2.x，最低支持 JDK 1.8。 1.x 分支对应的是 Spring Boot 1.x，最低支持 JDK 1.7。  Spring Cloud 使用 Maven 来构建，最快的使用方式是将本项目clone到本地，然后执行以下命令：\n./mvnw install  执行完毕后，项目将被安装到本地 Maven 仓库。\n如何使用 为了演示如何使用，Spring Cloud Alibaba 项目包含了一个子模块spring-cloud-alibaba-examples。此模块中提供了演示用的 example ，您可以阅读对应的 example 工程下的 readme 文档，根据里面的步骤来体验。\nExample 列表：\nsentinel example\n版本管理规范 项目的版本号格式为 x.x.x 的形式，其中 x 的数值类型为数字，从0开始取值，且不限于 0~9 这个范围。项目处于孵化器阶段时，第一位版本号固定使用0，即版本号为 0.x.x 的格式。\n由于 Spring Boot 1 和 Spring Boot 2 在 Actuator 模块的接口和注解有很大的变更，且 spring-cloud-commons 从 1.x.x 版本升级到 2.0.0 版本也有较大的变更，因此我们使用了两个不同分支来分别支持 Spring Boot 1 和 Spring Boot 2: * 0.1.x 版本适用于 Spring Boot 1 * 0.2.x 版本适用于 Spring Boot 2\n项目孵化阶段，项目版本升级机制如下： * 功能改动的升级会增加第三位版本号的数值，例如 0.1.0 的下一个版本为0.1.1。 * 如果遇到阻碍主业务流程的 bug，需要进行少量修改进行紧急修复，会出现类似于 0.1.1.fix 这样的版本。我们会尽量完善测试回归流程，避免此类场景出现。\n社区交流 邮件列表 spring-cloud-alibaba@googlegroups.com，欢迎通过此邮件列表讨论与 spring-cloud-alibaba 相关的一切。\n钉钉群 "
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/product_intro/2nd-level/first_case/",
+	"title": "I&#39;m on the second level",
+	"tags": [],
+	"description": "",
+	"content": " I\u0026rsquo;m on the second level "
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/quick_start/quick_start_guide/",
+	"title": "Quick_start_guide",
+	"tags": [],
+	"description": "",
+	"content": " Let me show you How it works!\n"
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/product_intro/2nd-level/",
+	"title": "The second level",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://aliware-os.github.io/nacos1/zh-cn/roadmaps/",
+	"title": "路线图",
+	"tags": [],
+	"description": "",
+	"content": " Spring Cloud Alibaba 致力于提供分布式应用服务开发的一站式解决方案。项目包含开发分布式应用服务的必需组件，方便开发者通过 Spring Cloud 编程模型轻松使用这些组件来开发分布式应用服务。\n此项目包含的组件内容，主要选取自阿里巴巴开源中间件和阿里云商业化产品，但也不限定于这些产品。\n如果您对 Roadmap 有任何建议或想法，欢迎在 issue 中或者通过其他社区渠道向我们提出，一起讨论。\n已包含的组件 Sentinel 阿里巴巴开源项目，把流量作为切入点，从流量控制，熔断降级，系统负载保护等多个维度保护服务的稳定性。\n即将加入的组件 Dubbo Apache Dubbo™ (incubating) 是一款高性能Java RPC框架。\nRocketMQ Apache RocketMQ™ 基于Java的高性能、高吞吐量的分布式消息和流计算平台。\nNacos 阿里巴巴开源产品，一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。\nSchedulerx 阿里中间件团队开发的一款分布式任务调度产品，支持周期性的任务与固定时间点触发任务。\nAliyun OSS 阿里云对象存储服务（Object Storage Service，简称 OSS），是阿里云提供的海量、安全、低成本、高可靠的云存储服务。您可以在任何应用、任何时间、任何地点存储和访问任意类型的数据。\nAliyun SLS 针对日志类数据的一站式服务，在阿里巴巴集团经历大量大数据场景锤炼而成。您无需开发就能快捷完成日志数据采集、消费、投递以及查询分析等功能，提升运维、运营效率，建立 DT 时代海量日志处理能力。\n"
+}]
