@@ -1,24 +1,26 @@
-[about]
-other = "关于"
-[service]
-other = "服务"
-[portfolio]
-other = "产品"
-[blog]
-other = "新闻"
-[contact]
-other = "联系"
+[Search-placeholder]
+other = "搜索..."
 
-[graphicdesign]
-other = "中文 Graphic Design"
-[webdesign]
-other = "中文 Web Design"
-[webdevelopment]
-other = "中文 Web Development"
+[Clear-History]
+other = "清除历史"
 
-[partners]
-other = "合作伙伴"
-[faqs]
-other = "常见问题"
-[badges]
-other = "荣誉奖项"
+[Attachments-label]
+other = "附件"
+
+[title-404]
+other = "错误"
+
+[message-404]
+other = "哎呀！好像这个页面被吃了 ¯\\_(ツ)_/¯。"
+
+[Go-to-homepage]
+other = "前往主页"
+
+[Edit-this-page]
+other = "编辑本页面"
+
+[Shortcuts-Title]
+other = "更多"
+
+[Expand-title]
+other = "点击展开..."
