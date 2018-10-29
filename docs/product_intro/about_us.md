@@ -5,6 +5,16 @@ weight: 6
 ---
 # Title
 
+## test
+
+../images 
+
+![../images](../images/dragonfly-linear.png)
+
+../../images
+
+![../../images](../../images/dragonfly-linear.png)
+
 这个快速开始手册是帮忙您快速在你的电脑上，下载安装并使用Nacos。
 
 ## 1.预备环境准备

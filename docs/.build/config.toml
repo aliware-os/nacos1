@@ -1,295 +1,66 @@
 baseURL = "http://aliware-os.github.io/nacos1"
-languageCode = "en-us"
-title = "Nacos Documentation"
-theme = "navigator-hugo"
+languageCode = "en-US"
+defaultContentLanguage = "en"
 
-# Build robots.txt file
-enableRobotsTXT = true
-# google analytics tracking id
-googleAnalytics = ""
+title = "Spring Cloud Alibaba Documentation"
+theme = "hugo-theme-learn-master"
+themesdir = "themes"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
 
-enableGitInfo = true
-pygmentsCodeFences = true
-
-# Multilangues setup
-# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
-defaultContentLanguageInSubdir = true
-DefaultContentLanguage = "en"
-
-# Site Params
 [params]
-    logo = "images/logo.png"
+  editURL = "https://github.com/aliware-os/nacos1/edit/master/content/"
+  description = "Documentation for Spring Cloud Alibaba"
+  author = "Aliware Docs"
+  showVisitedLinks = true
+  disableBreadcrumb = true
+  disableNextPrev = true
+  themeVariant = "blue"
 
-    # Gestion des langues : FR / EN / NL / DE
-    [[Params.listeLangues]]
-    code = "fr"
-    [[Params.listeLangues]]
-    code = "en"
-	# wayne
-	[[Params.listeLangues]]
-    code = "zh-cn"
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
 
-# Gestion des langues : FR / EN / NL / DE
 [Languages]
-    ############ 1 - Site en FRANCAIS
-    [Languages.fr]
-    weight = 1
-    languageCode = "fr-fr"
-    title = "FRANCAIS Example site multi-language"
-    dateFormat = "2 January 2006"
+[Languages.en]
+title = "Documentation for Spring Cloud Alibaba"
+weight = 1
+languageName = "English"
 
-    home = "FR Home"
-    logo = "images/logo.png"
-    menufixed = false
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> Roadmap"
+url = "roadmaps"
+weight = 11
 
-    footerDescription = "FRANCAIS Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-    footerServiceTitle = "FRANCAIS Services"
-    footerQuicklinkTitle = "FRANCAIS Quick links"
-    footerAboutTitle = "FRANCAIS About"
-    footerSubscribeTitle = "FRANCAIS Subscribe"
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> Github Repo"
+identifier = "ds"
+url = "https://github.com/spring-cloud-incubator/spring-cloud-alibaba"
+weight = 10
 
-    # Hero Area Section
-    [Languages.fr.params.hero]
-        enable  = true
-        heading = "FRANCAIS We love to make brands grow"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-        button  = true
-        btnText = "Know More"
-        btnURL  = "https://themefisher.com/"
-        videoThumb = "images/slider/video-player-thumb.jpg"
-        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
 
-    # About 2 Section
-    [Languages.fr.params.aboutSm]
-        enable  = true
-        title   = "FRANCAIS We have explored the digital landscape with passion for a long time"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+[Languages.zh-cn]
+title = "Spring Cloud Alibaba 文档"
+weight = 2
+languageName = "简体中文"
 
-    # Blog Section On Homepage
-    [Languages.fr.params.blog]
-        enable  = true
-        topTitle= "OUR UNTOLD STORY"
-        title   = "FRANCAIS Blog."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+[[Languages.zh-cn.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> 路线图"
+url = "roadmaps"
+weight = 11
 
-    # Contact Section
-    [Languages.fr.params.contact]
-        enable  = true
-        topTitle= "DROP US A NOTE"
-        title   = "FRANCAIS Contact Us."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-        address = "14/05, Stockhome <br> Victori Palace , United States"
-        phone   = "(03) 9283 2617"
-        fax     = "+61 3827 3590"
-        facebook= "https://www.facebook.com/"
-        twitter = "https://twitter.com/"
-        linkedin= "https://www.linkedin.com/"
-        dribbble= "https://dribbble.com/"
-        instagram= "https://www.instagram.com/"
-        mapLatitude = "51.507351"
-        mapLongitude= "-0.127758"
-        mapMarker   = "images/marker.png"
+[[Languages.zh-cn.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> Github 仓库"
+identifier = "ds"
+url = "https://github.com/spring-cloud-incubator/spring-cloud-alibaba"
+weight = 10
 
-    # Call to Action Section on About Page
-    [Languages.fr.params.cta]
-        enable  = true
-        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-        title   = "FRANCAIS Let's Create Something Together"
-        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-        btnText = "Nous contacter"
-
-    ############# 2 - Site en 中文
-    [Languages.en]
-    weight = 2
-    languageCode = "en-us"
-    title = "中文 Example site multi-language"
-    dateFormat = "January 2, 2006"
-
-    home = "EN Home"
-    logo = "images/logo.png"
-    menufixed = false
-
-    footerDescription = "中文 Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-    footerServiceTitle = "中文 Service"
-    footerQuicklinkTitle = "中文 Quicklinks"
-    footerAboutTitle = "中文 About"
-    footerSubscribeTitle = "中文 Subscribe"
-
-    # Hero Area Section
-    [Languages.en.params.hero]
-        enable  = true
-        heading = "中文 We love to make brands grow"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-        button  = true
-        btnText = "Know More"
-        btnURL  = "https://themefisher.com/"
-        videoThumb = "images/slider/video-player-thumb.jpg"
-        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
-
-    # About 2 Section
-    [Languages.en.params.aboutSm]
-        enable  = true
-        title   = "中文 We have explored the digital landscape with passion for a long time"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
-
-    # Blog Section On Homepage
-    [Languages.en.params.blog]
-        enable  = true
-        topTitle= "OUR UNTOLD STORY"
-        title   = "中文 Blog."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-
-    # Contact Section
-    [Languages.en.params.contact]
-        enable  = true
-        topTitle= "DROP US A NOTE"
-        title   = "中文 Contact Us."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-        address = "14/05, Stockhome <br> Victori Palace , United States"
-        phone   = "(03) 9283 2617"
-        fax     = "+61 3827 3590"
-        facebook= "https://www.facebook.com/"
-        twitter = "https://twitter.com/"
-        linkedin= "https://www.linkedin.com/"
-        dribbble= "https://dribbble.com/"
-        instagram= "https://www.instagram.com/"
-        mapLatitude = "51.507351"
-        mapLongitude= "-0.127758"
-        mapMarker   = "images/marker.png"
-
-    # Call to Action Section on About Page
-    [Languages.en.params.cta]
-        enable  = true
-        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-        title   = "中文 Let's Create Something Together"
-        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-        btnText = "Contact Us"
-	
-	############# 3 - Site en Chinese
-    [Languages.zh-cn]
-    weight = 3
-    languageCode = "zh-cn"
-    title = "中文示例"
-    dateFormat = "January 2, 2006"
-
-    home = "主页"
-    logo = "images/logo.png"
-    menufixed = false
-
-    footerDescription = "版权所有。保留所有权利。"
-    footerServiceTitle = "服务"
-    footerQuicklinkTitle = "链接"
-    footerAboutTitle = "关于"
-    footerSubscribeTitle = "订阅"
-
-    # Hero Area Section
-    [Languages.zh-cn.params.hero]
-        enable  = true
-        heading = "中文 We love to make brands grow"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-        button  = true
-        btnText = "Know More"
-        btnURL  = "https://themefisher.com/"
-        videoThumb = "images/slider/video-player-thumb.jpg"
-        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
-
-    # About 2 Section
-    [Languages.zh-cn.params.aboutSm]
-        enable  = true
-        title   = "中文 We have explored the digital landscape with passion for a long time"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
-
-    # Blog Section On Homepage
-    [Languages.zh-cn.params.blog]
-        enable  = true
-        topTitle= "OUR UNTOLD STORY"
-        title   = "中文 Blog."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-
-    # Contact Section
-    [Languages.zh-cn.params.contact]
-        enable  = true
-        topTitle= "DROP US A NOTE"
-        title   = "中文 Contact Us."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-        address = "14/05, Stockhome <br> Victori Palace , United States"
-        phone   = "(03) 9283 2617"
-        fax     = "+61 3827 3590"
-        facebook= "https://www.facebook.com/"
-        twitter = "https://twitter.com/"
-        linkedin= "https://www.linkedin.com/"
-        dribbble= "https://dribbble.com/"
-        instagram= "https://www.instagram.com/"
-        mapLatitude = "51.507351"
-        mapLongitude= "-0.127758"
-        mapMarker   = "images/marker.png"
-
-    # Call to Action Section on About Page
-    [Languages.zh-cn.params.cta]
-        enable  = true
-        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-        title   = "中文 Let's Create Something Together"
-        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-        btnText = "Contact Us"
-
-# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
-
-# Site Menus
-[menu]
-    # Navbar Menus
-    [[menu.nav]]
-        name    = "about"
-        url     = "about"
-        weight  = 2
-    [[menu.nav]]
-        name    = "service"
-        url     = "service"
-        weight  = 3
-    [[menu.nav]]
-        name    = "portfolio"
-        url     = "portfolio"
-        weight  = 4
-    [[menu.nav]]
-        name    = "blog"
-        url     = "blog"
-        weight  = 5
-    [[menu.nav]]
-        name    = "contact"
-        url     = "contact"
-        weight  = 6
-	[[menu.nav]]
-        name    = "doc"
-        url     = "doc"
-        weight  = 7
-
-    # Footer Service Menu
-    [[menu.service]]
-        name    = "graphicdesign"
-        url     = "service"
-        weight  = 1
-    [[menu.service]]
-        name    = "webdesign"
-        url     = "service"
-        weight  = 2
-    [[menu.service]]
-        name    = "webdevelopment"
-        url     = "service"
-        weight  = 3
-
-    # Footer Quick links Menu
-    [[menu.quicklink]]
-        name    = "partners"
-        url     = "about"
-        weight  = 1
-    [[menu.quicklink]]
-        name    = "about"
-        url     = "about"
-        weight  = 2
-    [[menu.quicklink]]
-        name    = "faqs"
-        url     = "about"
-        weight  = 3
-    [[menu.quicklink]]
-        name    = "badges"
-        url     = "about"
-        weight  = 4
+[[Languages.zh-cn.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Hugo 官方文档"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
