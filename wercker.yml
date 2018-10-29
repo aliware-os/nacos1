@@ -42,7 +42,7 @@ build:
     - arjen/hugo-build:
         basedir: "docs/.build"
         version: "0.47"
-        theme: hugo-theme-learn
+        theme: hugo-theme-learn-master
         flags: --buildDrafts=true
 
 deploy:
